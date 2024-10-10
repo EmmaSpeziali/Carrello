@@ -1,0 +1,137 @@
+body {
+    cursor: default;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: #bd2998;
+    font-size: 40px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 35px;
+    max-width: 500px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* From https://css.glass
+    /* background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px); */
+    /* border: 1px solid rgba(255, 255, 255, 0.39);  */
+  }
+  
+  input,
+  select {
+    border-radius: 8px;
+    height: 40px;
+    border: 1px solid;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: #000000;
+    background-color: transparent;
+  }
+  
+  #cFiscIn {
+    text-transform: uppercase;
+  }
+  
+  .button {
+    cursor: pointer;
+  }
+  
+  #submitBtn {
+    margin-top: 20px;
+    margin-right: 10px;
+    transition: all ease-in-out 400ms;
+    border: 2px solid #95bb72;
+    color: #558d22;
+  
+    &:hover {
+      background-color: #95bb72;
+      color: #ffffff;
+    }
+  }
+  
+  #resetBtn {
+    margin-left: 10px;
+    margin-top: 20px;
+    transition: all ease-in-out 400ms;
+    border: 2px solid #f43c3c;
+    color: #931111;
+  
+    &:hover {
+      background-color: #f43c3c;
+      color: #ffffff;
+    }
+  }
+  
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .checkboxContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  
+  .hobbyCheckbox {
+    margin-right: 10px;
+  }
+  
+  .checkboxItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+  }
+  
+  .checkboxItem label {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .radContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .radioItem {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .radContainer label {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .txt {
+    margin-right: 10px;
+  }
+  .containerGen {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 35px;
+    border-radius: 16px;
+    border: 1px solid;
+    /* From https://css.glass
+    /* background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px); */
+    /* border: 1px solid rgba(255, 255, 255, 0.39);  */
+  }
+  
