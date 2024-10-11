@@ -9,7 +9,7 @@ body {
     text-align: center;
     font-variant: small-caps;
     letter-spacing: 2px;
-    color: #bd2998;
+    color: #82105a;
     font-size: 40px;
   }
   
@@ -31,7 +31,7 @@ body {
   
   input,
   select {
-    border-radius: 8px;
+    border-radius: 5px;
     height: 40px;
     border: 1px solid;
     padding: 0 10px;
@@ -54,8 +54,8 @@ body {
     margin-top: 20px;
     margin-right: 10px;
     transition: all ease-in-out 400ms;
-    border: 2px solid #95bb72;
-    color: #558d22;
+    border: 2px solid #3e7708;
+    color: #000000;
   
     &:hover {
       background-color: #95bb72;
@@ -67,8 +67,8 @@ body {
     margin-left: 10px;
     margin-top: 20px;
     transition: all ease-in-out 400ms;
-    border: 2px solid #f43c3c;
-    color: #931111;
+    border: 2px solid #bf1010;
+    color: #000000;
   
     &:hover {
       background-color: #f43c3c;

@@ -58,46 +58,44 @@
         />
         <label for="age">Età: </label>
         <input
-        type="number"
-        name="age"
-        id="agein"
-        placeholder="0-99..."
-        max="99"
-        min="0"
-        required
+          type="number"
+          name="age"
+          id="agein"
+          placeholder="0-99..."
+          max="99"
+          min="0"
+          required
+          oninput="checkAge(this.id)" 
         />
         <div class="containerGen" id="genitori">
-            <label>Creadenziali di un genitore o un tutor legale:</label>
-            <br>
-                <label for="nome">Nome: </label>
-                <input
-                type="text"
-                name="nome"
-                id="nomein"
-                placeholder="Mario"
-                oninput="checkNome(this.id)"
-                required
-                />
-                <label for="cognome">Cognome: </label>
-                <input
-                type="text"
-                name="cognome"
-                id="cognomein"
-                placeholder="Rossi"
-                oninput="checkCognome(this.id)"
-                required
-                />
-                <label for="cFisc">Codice Fiscale: </label>
-                <input
-                  type="text"
-                  name="cFisc"
-                  id="cFiscIn"
-                  placeholder="ABCDEF01G23H456I"
-                  oninput="checkCf(this.id)"
-                  required
-                />
-        </div>
-        
+          <label>Creadenziali di un genitore o un tutor legale:</label>
+          <br>
+          <label for="nome">Nome: </label>
+          <input
+            type="text"
+            name="nome"
+            id="nomein"
+            placeholder="Mario"
+            required
+          />
+          <label for="cognome">Cognome: </label>
+          <input
+            type="text"
+            name="cognome"
+            id="cognomein"
+            placeholder="Rossi"
+            required
+          />
+          <label for="cFisc">Codice Fiscale: </label>
+          <input
+            type="text"
+            name="cFisc"
+            id="cFiscIn"
+            placeholder="ABCDEF01G23H456I"
+            required
+          />
+      </div>
+      
         <div class="btnContainer" >
           <input type="submit" value="Accedi" id="submitBtn" class="button"/>
           <input type="reset" value="Cancella" id="resetBtn" class="button"/>

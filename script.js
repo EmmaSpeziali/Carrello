@@ -59,18 +59,14 @@ function optim(id, value) {
   }
   function checkAge(id) {
     let age = parseInt(document.getElementById(id).value, 10);
-    console.log(age);
-    
-    if (!isNaN(age)) {
-        optim(id, true);
-        
-        // Mostra il container "genitori" se l'età è inferiore a 18
+
+    if (!isNaN(age) && age >= 0 && age <= 99) {
         if (age < 18) {
-            document.getElementById('genitori').style.display = 'block'; // Assicurati che il container sia inizialmente nascosto
+            document.getElementById('genitori').style.display = 'flex'; // Mostra il container
         } else {
-            document.getElementById('genitori').style.display = 'none';
+            document.getElementById('genitori').style.display = 'none'; // Nascondi il container
         }
     } else {
-        optim(id, false);
+        document.getElementById('genitori').style.display = 'none'; // Nascondi in caso di input non valido
     }
 }
