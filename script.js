@@ -70,3 +70,50 @@ function optim(id, value) {
         document.getElementById('genitori').style.display = 'none'; // Nascondi in caso di input non valido
     }
 }
+function checkForm() {
+  console.log("roblox");
+  let nome = document.getElementById("nomein").value;
+  let cognome = document.getElementById("cognomein").value;
+  let cell = document.getElementById("cellin").value;
+  let cf = document.getElementById("cFiscIn").value;
+  let via = document.getElementById("viain").value;
+  let age = parseInt(document.getElementById("agein").value);
+  if (
+    LETTERS_REGEX.test(nome) &&
+    LETTERS_REGEX.test(cognome) &&
+    PHONE_REGEX.test(cell) &&
+    CF_REGEX.test(cf) &&
+    via
+  ) {
+    document.getElementById("form").style.display = "none";
+
+    cf = cf.toUpperCase();
+
+    let ogg1 = parseInt(document.getElementById("quantita1").value);
+    let ogg2 = parseInt(document.getElementById("quantita2").value);
+    let ogg3 = parseInt(document.getElementById("quantita3").value);
+
+    let price = 0;
+    price += ogg1 * 7.12 ;
+    price += ogg2 * 6.49 ;
+    price += ogg3 * 3.89 ;
+
+    document.getElementById("recap").innerHTML = `
+    <p style="font-size: 16px; color: #333;"><strong>Nome:</strong> ${nome}</p>
+    <p style="font-size: 16px; color: #333;"><strong>Cognome:</strong> ${cognome}</p>
+    <p style="font-size: 16px; color: #333;"><strong>Numero di telefono:</strong> ${cell}</p>
+    <p style="font-size: 16px; color: #333;"><strong>Codice Fiscale:</strong> ${cf}</p>
+    <p style="font-size: 16px; color: #333;"><strong>Indirizzo:</strong> ${via}</p>
+    <p style="font-size: 16px; color: #333;"><strong>Età:</strong> ${age}</p>
+    <hr style="border: 1px solid #95BB72;">
+    <p style="font-size: 16px; color: #333;"><strong>Quantità Acido Ialuronico :</strong> ${ogg1}</p>
+    <p style="font-size: 16px; color: #333;"><strong>Quantità Mascara:</strong> ${ogg2}</p>
+    <p style="font-size: 16px; color: #333;"><strong>Quantità Mousse Detergente:</strong> ${ogg3}</p>
+    <hr style="border: 1px solid #95BB72;">
+    <p style="font-size: 18px; color: #4B6043; font-weight: bold;">Totale: €${price.toFixed(2)}</p>
+    `;
+    
+    
+    document.getElementById("order").style.display = "flex";
+  }
+}
