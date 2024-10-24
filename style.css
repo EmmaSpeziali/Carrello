@@ -22,11 +22,6 @@ body {
     max-width: 500px;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    /* From https://css.glass
-    /* background: rgba(255, 255, 255, 0.16);
-    backdrop-filter: blur(6.1px);
-    -webkit-backdrop-filter: blur(6.1px); */
-    /* border: 1px solid rgba(255, 255, 255, 0.39);  */
   }
   
   input,
@@ -128,10 +123,26 @@ body {
     margin-top: 35px;
     border-radius: 16px;
     border: 1px solid;
-    /* From https://css.glass
-    /* background: rgba(255, 255, 255, 0.16);
-    backdrop-filter: blur(6.1px);
-    -webkit-backdrop-filter: blur(6.1px); */
-    /* border: 1px solid rgba(255, 255, 255, 0.39);  */
+    
+  }
+  .containerOgg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   
+  .containerOgg > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .imgProdotti {
+    width: 120px; 
+    height: auto;
+  }
+   .order {
+    display: none;
+   }
